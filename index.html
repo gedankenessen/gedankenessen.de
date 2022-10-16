@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <style>
-
      body {
        background-color: black;
        margin: 0;
@@ -14,57 +13,36 @@
        height: 100vh;
        width: 100vw;
 
-       display: flex;
+       display: grid;
        justify-content: center;
        align-items: center;
      }
 
      .content {
        display: flex;
+       grid-gap: 4rem;
        flex-direction: row;
        flex-wrap: nowrap;
-       margin:auto;
-     }
 
-     .logo-wrapper {
-       display: grid;
-       grid-template-areas: "logo";
-       height: 6rem;
-       width: 6rem;
+       padding: 8rem 10rem;
+
+       background: linear-gradient(-45deg, #FF3746, #FDB913, #25C9FE);
+       background-size: 400% 400%;
+       animation: gradient 15s ease infinite;
      }
 
      .logo {
        grid-area: logo;
-       z-index: 1;
-       height: 6rem;
-       width: 6rem;
-     }
-
-     .logo-background {
-       background: linear-gradient(-45deg, #FF3746, #FDB913, #25C9FE);
-       background-size: 400% 400%;
-       animation: gradient 15s ease infinite;
-
-       grid-area: logo;
-       z-index: 0;
        height: 6rem;
        width: 6rem;
      }
 
      .title {
-       background: linear-gradient(-45deg, #FF3746, #FDB913, #25C9FE);
-       background-size: 400% 400%;
-       animation: gradient 15s ease infinite;
-
-       background-clip: text;
-       text-fill-color: transparent;
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-
+       color: white;
        font-family: sans-serif;
        font-size: 4rem;
-
-       margin: 0 0 0 4rem;
+       padding: 0;
+       margin: 0;
      }
 
      @keyframes gradient {
@@ -78,16 +56,12 @@
 	 background-position: 0% 50%;
        }
      }
-
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="content">
-	<div class="logo-wrapper">
-	  <img class="logo" alt="gedakenessen logo" src="./assets/logo.svg"/>
-	  <div class="logo-background"></div>
-	</div>
+	<img class="logo" alt="gedakenessen logo" src="./assets/logo.svg"/>
 	<h1 class="title">gedankenessen</h1>
       </div>
     </div>
