@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <style>
+
+     * {
+       padding: 0;
+       margin: 0;
+     }
+
      body {
        background-color: black;
-       margin: 0;
-       padding: 0;
      }
 
      .wrapper {
        height: 100vh;
        width: 100vw;
-
        display: grid;
        justify-content: center;
        align-items: center;
@@ -23,38 +26,30 @@
        grid-gap: 4rem;
        flex-direction: row;
        flex-wrap: nowrap;
-
-       padding: 8rem 10rem;
-
-       background: linear-gradient(-45deg, #FF3746, #FDB913, #25C9FE);
-       background-size: 400% 400%;
-       animation: gradient 15s ease infinite;
      }
 
      .logo {
        grid-area: logo;
        height: 6rem;
        width: 6rem;
+
+       transition-property: background-color;
+       transition-duration: 0.2s;
+       transition-timing-function: ease-in-out;
+     }
+
+     .logo:hover {
+       background-color: #7775D2;
      }
 
      .title {
        color: white;
        font-family: sans-serif;
        font-size: 4rem;
-       padding: 0;
-       margin: 0;
      }
 
-     @keyframes gradient {
-       0% {
-	 background-position: 0% 50%;
-       }
-       50% {
-	 background-position: 100% 50%;
-       }
-       100% {
-	 background-position: 0% 50%;
-       }
+     .title::selection {
+       background: #7775D2;
      }
     </style>
   </head>
