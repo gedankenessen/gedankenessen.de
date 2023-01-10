@@ -174,39 +174,138 @@
      .spacer {
        margin-bottom: 10vh;
      }
+
+     @media (prefers-reduced-motion: no-preference) {
+       .animated {
+	 animation-duration: 0.5s;
+	 animation-fill-mode: both;
+	 opacity: 0;
+	 animation-name: fadeInUp;
+	 -webkit-animation-duration: 0.5s;
+	 -webkit-animation-fill-mode: both;
+	 -webkit-animation-name: fadeInUp;
+       }
+     }
+
+     .animated-1-0 {
+       animation-delay: 100ms;
+     }
+
+     .animated-1-2 {
+       animation-delay: 120ms;
+     }
+
+     .animated-1-4 {
+       animation-delay: 140ms;
+     }
+
+     .animated-1-6 {
+       animation-delay: 160ms;
+     }
+
+     .animated-2-0 {
+       animation-delay: 200ms;
+     }
+
+     .animated-2-2 {
+       animation-delay: 220ms;
+     }
+
+     .animated-2-4 {
+       animation-delay: 240ms;
+     }
+
+     .animated-2-6 {
+       animation-delay: 260ms;
+     }
+
+     .animated-3-0 {
+       animation-delay: 300ms;
+     }
+
+     .animated-3-2 {
+       animation-delay: 320ms;
+     }
+
+     .animated-3-4 {
+       animation-delay: 340ms;
+     }
+
+     .animated-3-6 {
+       animation-delay: 360ms;
+     }
+
+     .animated-3-8 {
+       animation-delay: 380ms;
+     }
+
+     .animated-4-0 {
+       animation-delay: 400ms;
+     }
+
+     .animated-4-2 {
+       animation-delay: 420ms;
+     }
+
+     .animated-4-4 {
+       animation-delay: 440ms;
+     }
+
+     .animated-4-6 {
+       animation-delay: 460ms;
+     }
+
+     @keyframes fadeInUp {
+       from {
+	 transform: translate3d(0,40px,0)
+       }
+
+       to {
+	 transform: translate3d(0,0,0);
+	 opacity: 1
+       }
+     }
+
+     @-webkit-keyframes fadeInUp {
+       from {
+	 transform: translate3d(0,40px,0)
+       }
+
+       to {
+	 transform: translate3d(0,0,0);
+	 opacity: 1
+       }
+     }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="spacer"></div>
       <div class="header-container">
-	<img class="logo" alt="gedakenessen logo" src="./assets/logo.svg" />
-	<h3 class="title">Gedankenessen is building <span class="highlight">tooling</span>.</h3>
+	<img class="logo animated animated-1-0" alt="gedakenessen logo" src="./assets/logo.svg" />
+	<h3 class="title animated animated-1-2">Gedankenessen is building <span class="highlight">tooling</span>.</h3>
       </div>
-
       <div class="section-wrapper">
 	<div class="section-container">
-	  <div class="section">
+	  <div class="section animated animated-2-0">
 	    <h3 class="section-header">Why transparency?</h3>
 	    <p class="section-description">
 	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
 	    </p>
 	  </div>
-
-	  <div class="section">
+	  <div class="section animated animated-2-2">
 	    <h3 class="section-header">Why prototyping?</h3>
 	    <p class="section-description">
 	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
 	    </p>
 	  </div>
-
-	  <div class="section">
+	  <div class="section animated animated-2-4">
 	    <h3 class="section-header">Why less?</h3>
 	    <p class="section-description">
 	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
 	    </p>
 	  </div>
-	  <div class="section">
+	  <div class="section animated animated-2-6">
 	    <h3 class="section-header">Why digital?</h3>
 	    <p class="section-description">
 	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
@@ -215,11 +314,10 @@
 
 	</div>
       </div>
-
       <div class="section-wrapper">
-	<h1 class="section-wrapper-header">Products</h1>
+	<h1 class="section-wrapper-header animated animated-3-0">Products</h1>
 	<div class="section-container">
-	  <div class="section">
+	  <div class="section animated animated-3-2">
 	    <h3 class="section-header">crud</h3>
 	    <p class="section-description">
 	      <p class="text">
@@ -239,7 +337,7 @@
 	    </p>
 	  </div>
 
-	  <div class="section">
+	  <div class="section animated animated-3-4">
 	    <h3 class="section-header">stackradar</h3>
 	    <p class="section-description">
 	      <p class="text">
@@ -259,7 +357,7 @@
 	    </p>
 	  </div>
 
-	  <div class="section">
+	  <div class="section animated animated-3-6">
 	    <h3 class="section-header">feedstack</h3>
 	    <p class="section-description">
 	      <p class="text">
@@ -280,7 +378,7 @@
 	    </p>
 	  </div>
 
-	  <div class="section">
+	  <div class="section animated animated-3-8">
 	    <h3 class="section-header">blob</h3>
 	    <p class="section-description">
 
@@ -301,8 +399,7 @@
 	  </div>
 	</div>
       </div>
-
-      <div class="section-wrapper">
+      <div class="section-wrapper animated animated-4-0">
 	<h1 class="section-wrapper-header">Blog</h1>
 	<div class="section-container" style="overflow: hidden">
 	  <div class="section">
