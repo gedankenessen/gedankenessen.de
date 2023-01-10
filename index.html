@@ -144,7 +144,7 @@
        }
      }
 
-     .text {
+     .text, .section-description {
        text-align: justify;
      }
 
@@ -173,6 +173,11 @@
 
      .spacer {
        margin-bottom: 10vh;
+     }
+
+     br {
+       margin-top: var(--space-2);
+       margin-bottom: var(--space-2);
      }
 
      @media (prefers-reduced-motion: no-preference) {
@@ -292,28 +297,30 @@
 	  <div class="section animated animated-2-0">
 	    <h3 class="section-header">Why transparency?</h3>
 	    <p class="section-description">
-	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
+	      <span class="highlight">Sharing</span> data, <span class="highlight">visualizing</span> processes and <span class="highlight">modeling</span> statuses inside of our application allows us to accurately <span class="highlight">communicate</span> with both customers and team members. That is the goal of transparency.
+	      It helps build <span class="highlight">trust</span> and improves the <span class="highlight">understanding</span> of how work is done. Everyone can understand <span class="highlight">progress</span> quicker, have more <span class="highlight">accurate</span> expectations and do more precise <span class="highlight">planing</span>.
 	    </p>
 	  </div>
 	  <div class="section animated animated-2-2">
 	    <h3 class="section-header">Why prototyping?</h3>
 	    <p class="section-description">
-	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
+	      Offering superior <span class="highlight">UX</span> or even just a different perspective can be enough to make your product <span class="highlight">viable</span>. Yet while UX has become a honed craft, user <span class="highlight">expectations</span> have exploded. We need to acknowledge that we don't know how <span class="highlight">effective</span> our solution is, until we try it. Embracing prototyping gives us the necessary <span class="highlight">speed</span> to explore these new ideas and transform them into successful products.
 	    </p>
 	  </div>
 	  <div class="section animated animated-2-4">
 	    <h3 class="section-header">Why less?</h3>
 	    <p class="section-description">
-	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
+	      <span class="highlight">Complexity</span> is one of the biggest challenges that we face today. Software needs to be continuously <span class="highlight">evolved</span> and <span class="highlight">morphed</span> to suit new use-cases. Yet, it’s universally understood that the best tools are the ones that are <span class="highlight">focused</span> and do one thing well.
+	      By expecting less we allow our products to focus on that one thing and <span class="highlight">perfect</span> it. Besides great UX and achievable deadlines the arguably greatest win is <span class="highlight">avoiding</span> the endless pit of complexity that looms over every project.
 	    </p>
 	  </div>
 	  <div class="section animated animated-2-6">
 	    <h3 class="section-header">Why digital?</h3>
 	    <p class="section-description">
-	      Fusce scelerisque orci erat, sit amet molestie mauris iaculis sit amet. Sed ut varius augue. Praesent tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
+	      Computers are very <span class="highlight">different</span> to analog tools in that they allow us to seemingly <span class="highlight">scale</span> endlessly. We can <span class="highlight">abstract</span> away busywork, define new ways to work with data and overpower previously unsolvable problems. And most importantly: Users can be <span class="highlight">empowered</span> to do their best work.
+	      In the end we have no <span class="highlight">choice</span> but to take up digital <span class="highlight">solution</span> as the never ending arms race of <span class="highlight">productivity</span> continues.
 	    </p>
 	  </div>
-
 	</div>
       </div>
       <div class="section-wrapper">
@@ -322,81 +329,44 @@
 	  <div class="section animated animated-3-2">
 	    <h3 class="section-header">crud</h3>
 	    <p class="section-description">
-	      <p class="text">
-		Prototype your <span class="highlight">backend</span> from your
-		<span class="highlight">frontend</span>.
-	      </p>
-	      <br/>
-	      <p class="text">
-		Easily create a <span class="highlight">basic</span> crud REST API by <span class="highlight">sending</span> your desired data format via JSON. As your data <span class="highlight">expectations</span> change just resend a POST request to <span class="highlight">morph</span> the structure of your <span class="hightlight">data</span> to your liking.
-	      </p>
-	      <br/>
-	      <p class="text">
-		Quickly <span class="highlight">iterate</span>. Once you’re done with experimenting, you can <span class="highlight">browse</span> the final state of your submitted data and use it to <span class="highlight">build</span> your production backend.
-	      </p>
+	      Prototype your <span class="highlight">backend</span> from your
+	      <span class="highlight">frontend</span>.
+	      Easily create a <span class="highlight">basic</span> crud REST API by <span class="highlight">sending</span> your desired data format via JSON. As your data <span class="highlight">expectations</span> change just resend a POST request to <span class="highlight">morph</span> the structure of your <span class="hightlight">data</span> to your liking.
+	      Quickly <span class="highlight">iterate</span>. Once you’re done with experimenting, you can <span class="highlight">browse</span> the final state of your submitted data and use it to <span class="highlight">build</span> your production backend.
 	      <br/>
 	      <a class="link" href="https://crud.gedankenessen.de" target="_blank">Learn more</a>
 	    </p>
 	  </div>
-
 	  <div class="section animated animated-3-4">
 	    <h3 class="section-header">stackradar</h3>
 	    <p class="section-description">
-	      <p class="text">
-		Fusce <span class="highlight">tellus</span> orci erat, sit amet <span class="highlight">molestie</span> mauris iaculis sit amet. Sed ut varius augue. <span class="highlight">Praesent</span> tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
-	      </p>
+	      Fusce <span class="highlight">tellus</span> orci erat, sit amet <span class="highlight">molestie</span> mauris iaculis sit amet. Sed ut varius augue. <span class="highlight">Praesent</span> tellus nisi, commodo sed mauris non, condimentum bibendum turpis. Sed at vulputate massa.
+	      Vestibulum <span class="highlight">tempus</span> purus nec lacinia consectetur. Mauris congue nec felis nec facilisis. Nullam quam <span class="highlight">neque</span>, malesuada sagittis nunc sed, tempus vulputate ligula. Proin dictum mauris ut suscipit ullamcorper.
+	      Ut accumsan nulla at <span class="highlight">enim</span> consequat rutrum. Nullam purus ligula, <span class="highlight">egestas</span> quis sapien vel, interdum dignissim ligula. Ut non enim vehicula, tincidunt neque <span class="highlight">posuere</span>, ornare neque. Nullam purus ligula, egestas.
 	      <br/>
-	      <p class="text">
-		Vestibulum <span class="highlight">tempus</span> purus nec lacinia consectetur. Mauris congue nec felis nec facilisis. Nullam quam <span class="highlight">neque</span>, malesuada sagittis nunc sed, tempus vulputate ligula. Proin dictum mauris ut suscipit ullamcorper.
-	      </p>
-	      <p class="text">
-		Ut accumsan nulla at <span class="highlight">enim</span> consequat rutrum. Nullam purus ligula, <span class="highlight">egestas</span> quis sapien vel, interdum dignissim ligula. Ut non enim vehicula, tincidunt neque <span class="highlight">posuere</span>, ornare neque. Nullam purus ligula, egestas.
-	      </p>
-	      <br/>
-	      <p class="text">
-		<span class="highlight">Coming soon.</span>
-	      </p>
+	      <span class="highlight">Coming soon.</span>
 	    </p>
 	  </div>
 
 	  <div class="section animated animated-3-6">
 	    <h3 class="section-header">feedstack</h3>
 	    <p class="section-description">
-	      <p class="text">
-		Ut vel <span class="highlight">urna</span> eu neque finibus posuere non non <span class="highlight">magna</span>. Nullam ac ultricies nisi. Curabitur <span class="highlight">lorem</span> risus, ultricies ut sapien vitae, pharetra pharetra  <span class="highlight">mauris</span>. Praesent commodo est id semper sollicitudin.
-	      </p>
+	      Ut vel <span class="highlight">urna</span> eu neque finibus posuere non non <span class="highlight">magna</span>. Nullam ac ultricies nisi. Curabitur <span class="highlight">lorem</span> risus, ultricies ut sapien vitae, pharetra pharetra  <span class="highlight">mauris</span>. Praesent commodo est id semper sollicitudin.
+	      Proin et <span class="highlight">velit</span> non sapien molestie <span class="highlight">congue</span> id ut lorem. Aliquam erat volutpat. Integer et lectus vel massa <span class="highlight">malesuada</span> suscipit. Sed vulputate, nisi eget scelerisque tristique, massa eros vestibulum ligula.
+	      <span class="highlight">Augue</span> massa at ipsum. In <span class="highlight">dictum</span> porta ultrices. Praesent eget placerat urna. Etiam ut <span class="highlight">lacus</span> quis turpis ultrices bibendum. Mauris congue <span class="highlight">vestibulum</span> rutrum.
 	      <br/>
-	      <p class="text">
-		Proin et <span class="highlight">velit</span> non sapien molestie <span class="highlight">congue</span> id ut lorem. Aliquam erat volutpat. Integer et lectus vel massa <span class="highlight">malesuada</span> suscipit. Sed vulputate, nisi eget scelerisque tristique, massa eros vestibulum ligula.
-	      </p>
-	      <br/>
-	      <p class="text">
-		<span class="highlight">Augue</span> massa at ipsum. In <span class="highlight">dictum</span> porta ultrices. Praesent eget placerat urna. Etiam ut <span class="highlight">lacus</span> quis turpis ultrices bibendum. Mauris congue <span class="highlight">vestibulum</span> rutrum.
-	      </p>
-	      <br/>
-	      <p class="text">
-		<span class="highlight">Coming soon.</span>
-	      </p>
+	      <span class="highlight">Coming soon.</span>
 	    </p>
 	  </div>
 
 	  <div class="section animated animated-3-8">
 	    <h3 class="section-header">blob</h3>
 	    <p class="section-description">
-
-	      <p class="text">
-		Vivamus <span class="highlight">commodo</span> porta porttitor. Vestibulum ante ipsum primis in <span class="highlight">faucibus</span> orci luctus et ultrices posuere cubilia curae.
-		In nec <span class="highlight">magna</span> euismod, finibus eros nec, scelerisque <span class="highlight">augue</span>. Ut sollicitudin placerat lectus, ac scelerisque leo tempus eleifend.
-	      </p>
+	      Vivamus <span class="highlight">commodo</span> porta porttitor. Vestibulum ante ipsum primis in <span class="highlight">faucibus</span> orci luctus et ultrices posuere cubilia curae.
+	      In nec <span class="highlight">magna</span> euismod, finibus eros nec, scelerisque <span class="highlight">augue</span>. Ut sollicitudin placerat lectus, ac scelerisque leo tempus eleifend.
+	      <span class="highlight">Fusce</span> id tempor ligula. Maecenas id odio nec ligula elementum <span class="highlight">mollis</span> et id nisi. Cras vel eros imperdiet diam consequat malesuada. Mauris volutpat laoreet <span class="highlight">lacinia</span>.
 	      <br/>
-
-	      <p class="text">
-		<span class="highlight">Fusce</span> id tempor ligula. Maecenas id odio nec ligula elementum <span class="highlight">mollis</span> et id nisi. Cras vel eros imperdiet diam consequat malesuada. Mauris volutpat laoreet <span class="highlight">lacinia</span>.
-	      </p>
-	      <br/>
-	      <p class="text">
-		<span class="highlight">Coming soon.</span>
-	      </p>
+	      <span class="highlight">Coming soon.</span>
 	    </p>
 	  </div>
 	</div>
